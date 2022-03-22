@@ -81,5 +81,22 @@ namespace WindowsFormsAppEntityFrameworkLinq
 
             dataGridView1.DataSource = query.ToList();
         }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            Student s = new Student();
+            s.Name = TxtName.Text;
+            s.Lastname = TxtLastname.Text;
+            db.Student.Add(s);
+            db.SaveChanges();
+            MessageBox.Show("Öğrenci listeye eklendi!");
+
+            Lesson l = new Lesson();
+            l.LessonName = TxtLessonName.Text;
+            db.Lesson.Add(l);
+            db.SaveChanges();
+            MessageBox.Show("Ders listeye eklendi!");
+
+        }
     }
 }

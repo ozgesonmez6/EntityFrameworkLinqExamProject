@@ -99,6 +99,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnSave.TabIndex = 2;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnDelete
             // 
