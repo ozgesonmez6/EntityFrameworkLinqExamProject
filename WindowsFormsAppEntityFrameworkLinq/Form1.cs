@@ -119,5 +119,10 @@ namespace WindowsFormsAppEntityFrameworkLinq
             db.SaveChanges();
             MessageBox.Show("Öğrenci güncellendi!");
         }
+
+        private void BtnProcedur_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.NoteList();
+        }
     }
 }

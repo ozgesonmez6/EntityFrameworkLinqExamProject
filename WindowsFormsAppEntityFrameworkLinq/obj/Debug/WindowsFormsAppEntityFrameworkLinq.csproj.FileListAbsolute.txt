@@ -11,3 +11,4 @@ C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\WindowsFormsAppEn
 C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\WindowsFormsAppEntityFrameworkLinq\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\WindowsFormsAppEntityFrameworkLinq\obj\Debug\WindowsFormsAppEntityFrameworkLinq.exe
 C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\WindowsFormsAppEntityFrameworkLinq\obj\Debug\WindowsFormsAppEntityFrameworkLinq.pdb
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\WindowsFormsAppEntityFrameworkLinq\obj\Debug\WindowsFormsAppEntityFrameworkLinq.csproj.AssemblyReference.cache

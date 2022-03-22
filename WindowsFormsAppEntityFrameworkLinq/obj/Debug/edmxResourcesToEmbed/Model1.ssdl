@@ -53,6 +53,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="NoteList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="DbExamModelStoreContainer">
     <EntitySet Name="Lesson" EntityType="Self.Lesson" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Note" EntityType="Self.Note" Schema="dbo" store:Type="Tables" />

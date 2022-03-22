@@ -64,6 +64,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.label10 = new System.Windows.Forms.Label();
             this.BtnLessonList = new System.Windows.Forms.Button();
             this.BtnNoteList = new System.Windows.Forms.Button();
+            this.BtnProcedur = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Student.SuspendLayout();
             this.Lesson.SuspendLayout();
@@ -395,11 +396,22 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnNoteList.UseVisualStyleBackColor = true;
             this.BtnNoteList.Click += new System.EventHandler(this.BtnNoteList_Click);
             // 
+            // BtnProcedur
+            // 
+            this.BtnProcedur.Location = new System.Drawing.Point(12, 536);
+            this.BtnProcedur.Name = "BtnProcedur";
+            this.BtnProcedur.Size = new System.Drawing.Size(130, 37);
+            this.BtnProcedur.TabIndex = 11;
+            this.BtnProcedur.Text = "Procedur";
+            this.BtnProcedur.UseVisualStyleBackColor = true;
+            this.BtnProcedur.Click += new System.EventHandler(this.BtnProcedur_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 584);
+            this.Controls.Add(this.BtnProcedur);
             this.Controls.Add(this.BtnNoteList);
             this.Controls.Add(this.BtnLessonList);
             this.Controls.Add(this.Note);
@@ -461,6 +473,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
         private System.Windows.Forms.Button BtnNoteList;
         private System.Windows.Forms.Button BtnExamUpdate;
         private System.Windows.Forms.Button BtnCalculate;
+        private System.Windows.Forms.Button BtnProcedur;
     }
 }
 

@@ -12,6 +12,8 @@ namespace WindowsFormsAppEntityFrameworkLinq
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbExamEntities : DbContext
     {
@@ -28,5 +30,10 @@ namespace WindowsFormsAppEntityFrameworkLinq
         public virtual DbSet<Lesson> Lesson { get; set; }
         public virtual DbSet<Note> Note { get; set; }
         public virtual DbSet<Student> Student { get; set; }
+    
+        public virtual ObjectResult<NoteList_Result> NoteList()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<NoteList_Result>("NoteList");
+        }
     }
 }

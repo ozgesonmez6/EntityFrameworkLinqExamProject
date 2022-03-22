@@ -69,5 +69,17 @@
       <End Role="Student" EntitySet="Student" />
       <End Role="Note" EntitySet="Note" />
     </AssociationSet>
+    <FunctionImport Name="NoteList" ReturnType="Collection(DbExamModel.NoteList_Result)" />
   </EntityContainer>
+  <ComplexType Name="NoteList_Result">
+    <Property Type="Int32" Name="NoteId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Name_Lastname" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="LessonName" Nullable="true" MaxLength="50" />
+    <Property Type="Int16" Name="Exam1" Nullable="true" />
+    <Property Type="Int16" Name="Exam2" Nullable="true" />
+    <Property Type="Int16" Name="Exam3" Nullable="true" />
+    <Property Type="Decimal" Name="Average" Nullable="true" Precision="5" Scale="2" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
 </Schema>

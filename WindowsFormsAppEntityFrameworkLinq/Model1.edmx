@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbExamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbExamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Lesson">
           <Key>
             <PropertyRef Name="LessonId" />
@@ -58,6 +58,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="NoteList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbExamModelStoreContainer">
           <EntitySet Name="Lesson" EntityType="Self.Lesson" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Note" EntityType="Self.Note" Schema="dbo" store:Type="Tables" />
@@ -71,8 +72,7 @@
             <End Role="Note" EntitySet="Note" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbExamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -145,7 +145,19 @@
             <End Role="Student" EntitySet="Student" />
             <End Role="Note" EntitySet="Note" />
           </AssociationSet>
+          <FunctionImport Name="NoteList" ReturnType="Collection(DbExamModel.NoteList_Result)" />
         </EntityContainer>
+        <ComplexType Name="NoteList_Result">
+          <Property Type="Int32" Name="NoteId" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Name_Lastname" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="LessonName" Nullable="true" MaxLength="50" />
+          <Property Type="Int16" Name="Exam1" Nullable="true" />
+          <Property Type="Int16" Name="Exam2" Nullable="true" />
+          <Property Type="Int16" Name="Exam3" Nullable="true" />
+          <Property Type="Decimal" Name="Average" Nullable="true" Precision="5" Scale="2" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -184,6 +196,21 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="NoteList" FunctionName="DbExamModel.Store.NoteList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbExamModel.NoteList_Result">
+                <ScalarProperty Name="NoteId" ColumnName="NoteId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Name_Lastname" ColumnName="Name Lastname" />
+                <ScalarProperty Name="LessonName" ColumnName="LessonName" />
+                <ScalarProperty Name="Exam1" ColumnName="Exam1" />
+                <ScalarProperty Name="Exam2" ColumnName="Exam2" />
+                <ScalarProperty Name="Exam3" ColumnName="Exam3" />
+                <ScalarProperty Name="Average" ColumnName="Average" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
