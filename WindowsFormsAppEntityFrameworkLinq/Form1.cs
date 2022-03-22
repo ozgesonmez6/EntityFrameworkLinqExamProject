@@ -108,5 +108,16 @@ namespace WindowsFormsAppEntityFrameworkLinq
             MessageBox.Show("Öğrenci silindi!");
 
         }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(TxtStudentID.Text);
+            var x = db.Student.Find(id);
+            x.Name = TxtName.Text;
+            x.Lastname = TxtLastname.Text;
+            x.Photo = TxtPhotoLink.Text;
+            db.SaveChanges();
+            MessageBox.Show("Öğrenci güncellendi!");
+        }
     }
 }

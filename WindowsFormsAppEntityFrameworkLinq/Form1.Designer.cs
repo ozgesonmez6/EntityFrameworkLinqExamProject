@@ -119,6 +119,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnUpdate.TabIndex = 4;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnFind
             // 
