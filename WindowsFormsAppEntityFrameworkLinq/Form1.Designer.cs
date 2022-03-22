@@ -35,7 +35,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnDelete = new System.Windows.Forms.Button();
             this.BtnUpdate = new System.Windows.Forms.Button();
             this.BtnFind = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Student = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,34 +44,35 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.TxtName = new System.Windows.Forms.TextBox();
             this.TxtStudentID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Lesson = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtLessonName = new System.Windows.Forms.TextBox();
             this.TxtLessonID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Note = new System.Windows.Forms.GroupBox();
+            this.BtnExamUpdate = new System.Windows.Forms.Button();
+            this.BtnCalculate = new System.Windows.Forms.Button();
+            this.TxtStatus = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.TxtAverage = new System.Windows.Forms.TextBox();
             this.TxtExam3 = new System.Windows.Forms.TextBox();
             this.TxtExam2 = new System.Windows.Forms.TextBox();
             this.TxtExam1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.TxtStatus = new System.Windows.Forms.TextBox();
             this.BtnLessonList = new System.Windows.Forms.Button();
             this.BtnNoteList = new System.Windows.Forms.Button();
-            this.BtnCalculate = new System.Windows.Forms.Button();
-            this.BtnExamUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.Student.SuspendLayout();
+            this.Lesson.SuspendLayout();
+            this.Note.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -126,22 +127,22 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnFind.Text = "Find";
             this.BtnFind.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // Student
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.TxtPhotoLink);
-            this.groupBox1.Controls.Add(this.TxtLastname);
-            this.groupBox1.Controls.Add(this.TxtName);
-            this.groupBox1.Controls.Add(this.TxtStudentID);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(148, 241);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(247, 203);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.Student.Controls.Add(this.label4);
+            this.Student.Controls.Add(this.label3);
+            this.Student.Controls.Add(this.label2);
+            this.Student.Controls.Add(this.TxtPhotoLink);
+            this.Student.Controls.Add(this.TxtLastname);
+            this.Student.Controls.Add(this.TxtName);
+            this.Student.Controls.Add(this.TxtStudentID);
+            this.Student.Controls.Add(this.label1);
+            this.Student.Location = new System.Drawing.Point(148, 241);
+            this.Student.Name = "Student";
+            this.Student.Size = new System.Drawing.Size(247, 203);
+            this.Student.TabIndex = 6;
+            this.Student.TabStop = false;
+            this.Student.Text = "Student";
             // 
             // label4
             // 
@@ -207,18 +208,18 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.label1.TabIndex = 14;
             this.label1.Text = "ID :";
             // 
-            // groupBox2
+            // Lesson
             // 
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.TxtLessonName);
-            this.groupBox2.Controls.Add(this.TxtLessonID);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(148, 460);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(247, 110);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.Lesson.Controls.Add(this.label7);
+            this.Lesson.Controls.Add(this.TxtLessonName);
+            this.Lesson.Controls.Add(this.TxtLessonID);
+            this.Lesson.Controls.Add(this.label8);
+            this.Lesson.Location = new System.Drawing.Point(148, 460);
+            this.Lesson.Name = "Lesson";
+            this.Lesson.Size = new System.Drawing.Size(247, 110);
+            this.Lesson.TabIndex = 7;
+            this.Lesson.TabStop = false;
+            this.Lesson.Text = "Lesson";
             // 
             // label7
             // 
@@ -252,26 +253,87 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.label8.TabIndex = 14;
             this.label8.Text = "ID :";
             // 
-            // groupBox3
+            // Note
             // 
-            this.groupBox3.Controls.Add(this.BtnExamUpdate);
-            this.groupBox3.Controls.Add(this.BtnCalculate);
-            this.groupBox3.Controls.Add(this.TxtStatus);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.TxtAverage);
-            this.groupBox3.Controls.Add(this.TxtExam3);
-            this.groupBox3.Controls.Add(this.TxtExam2);
-            this.groupBox3.Controls.Add(this.TxtExam1);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Location = new System.Drawing.Point(438, 241);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(265, 329);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.Note.Controls.Add(this.BtnExamUpdate);
+            this.Note.Controls.Add(this.BtnCalculate);
+            this.Note.Controls.Add(this.TxtStatus);
+            this.Note.Controls.Add(this.label11);
+            this.Note.Controls.Add(this.label9);
+            this.Note.Controls.Add(this.label6);
+            this.Note.Controls.Add(this.label5);
+            this.Note.Controls.Add(this.TxtAverage);
+            this.Note.Controls.Add(this.TxtExam3);
+            this.Note.Controls.Add(this.TxtExam2);
+            this.Note.Controls.Add(this.TxtExam1);
+            this.Note.Controls.Add(this.label10);
+            this.Note.Location = new System.Drawing.Point(438, 241);
+            this.Note.Name = "Note";
+            this.Note.Size = new System.Drawing.Size(265, 329);
+            this.Note.TabIndex = 8;
+            this.Note.TabStop = false;
+            this.Note.Text = "Note";
+            // 
+            // BtnExamUpdate
+            // 
+            this.BtnExamUpdate.Location = new System.Drawing.Point(107, 267);
+            this.BtnExamUpdate.Name = "BtnExamUpdate";
+            this.BtnExamUpdate.Size = new System.Drawing.Size(130, 37);
+            this.BtnExamUpdate.TabIndex = 25;
+            this.BtnExamUpdate.Text = "Exam Update";
+            this.BtnExamUpdate.UseVisualStyleBackColor = true;
+            // 
+            // BtnCalculate
+            // 
+            this.BtnCalculate.Location = new System.Drawing.Point(107, 219);
+            this.BtnCalculate.Name = "BtnCalculate";
+            this.BtnCalculate.Size = new System.Drawing.Size(130, 37);
+            this.BtnCalculate.TabIndex = 24;
+            this.BtnCalculate.Text = "Calculate";
+            this.BtnCalculate.UseVisualStyleBackColor = true;
+            // 
+            // TxtStatus
+            // 
+            this.TxtStatus.Location = new System.Drawing.Point(137, 186);
+            this.TxtStatus.Name = "TxtStatus";
+            this.TxtStatus.Size = new System.Drawing.Size(100, 22);
+            this.TxtStatus.TabIndex = 23;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(75, 189);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 17);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Status :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(62, 156);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(69, 17);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Average :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(69, 111);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 17);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Exam 3 :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(69, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 17);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Exam 2 :";
             // 
             // TxtAverage
             // 
@@ -310,49 +372,6 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.label10.TabIndex = 14;
             this.label10.Text = "Exam 1 :";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(69, 68);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 17);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Exam 2 :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(69, 111);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 17);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Exam 3 :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(62, 156);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 17);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Average :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(75, 189);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 17);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Status :";
-            // 
-            // TxtStatus
-            // 
-            this.TxtStatus.Location = new System.Drawing.Point(137, 186);
-            this.TxtStatus.Name = "TxtStatus";
-            this.TxtStatus.Size = new System.Drawing.Size(100, 22);
-            this.TxtStatus.TabIndex = 23;
-            // 
             // BtnLessonList
             // 
             this.BtnLessonList.Location = new System.Drawing.Point(12, 450);
@@ -361,6 +380,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnLessonList.TabIndex = 9;
             this.BtnLessonList.Text = "Lesson List";
             this.BtnLessonList.UseVisualStyleBackColor = true;
+            this.BtnLessonList.Click += new System.EventHandler(this.BtnLessonList_Click);
             // 
             // BtnNoteList
             // 
@@ -371,24 +391,6 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnNoteList.Text = "Note List";
             this.BtnNoteList.UseVisualStyleBackColor = true;
             // 
-            // BtnCalculate
-            // 
-            this.BtnCalculate.Location = new System.Drawing.Point(107, 219);
-            this.BtnCalculate.Name = "BtnCalculate";
-            this.BtnCalculate.Size = new System.Drawing.Size(130, 37);
-            this.BtnCalculate.TabIndex = 24;
-            this.BtnCalculate.Text = "Calculate";
-            this.BtnCalculate.UseVisualStyleBackColor = true;
-            // 
-            // BtnExamUpdate
-            // 
-            this.BtnExamUpdate.Location = new System.Drawing.Point(107, 267);
-            this.BtnExamUpdate.Name = "BtnExamUpdate";
-            this.BtnExamUpdate.Size = new System.Drawing.Size(130, 37);
-            this.BtnExamUpdate.TabIndex = 25;
-            this.BtnExamUpdate.Text = "Exam Update";
-            this.BtnExamUpdate.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -396,9 +398,9 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.ClientSize = new System.Drawing.Size(800, 584);
             this.Controls.Add(this.BtnNoteList);
             this.Controls.Add(this.BtnLessonList);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Note);
+            this.Controls.Add(this.Lesson);
+            this.Controls.Add(this.Student);
             this.Controls.Add(this.BtnFind);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnDelete);
@@ -408,12 +410,12 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.Student.ResumeLayout(false);
+            this.Student.PerformLayout();
+            this.Lesson.ResumeLayout(false);
+            this.Lesson.PerformLayout();
+            this.Note.ResumeLayout(false);
+            this.Note.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -426,7 +428,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.Button BtnFind;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Student;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -435,12 +437,12 @@ namespace WindowsFormsAppEntityFrameworkLinq
         private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.TextBox TxtStudentID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox Lesson;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TxtLessonName;
         private System.Windows.Forms.TextBox TxtLessonID;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox Note;
         private System.Windows.Forms.TextBox TxtStatus;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
