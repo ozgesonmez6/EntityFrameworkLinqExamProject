@@ -196,6 +196,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(100, 22);
             this.TxtName.TabIndex = 16;
+            this.TxtName.TextChanged += new System.EventHandler(this.TxtName_TextChanged);
             // 
             // TxtStudentID
             // 

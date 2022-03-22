@@ -129,5 +129,14 @@ namespace WindowsFormsAppEntityFrameworkLinq
         {
             dataGridView1.DataSource = db.Student.Where(x => x.Name == TxtName.Text | x.Lastname==TxtLastname.Text).ToList();
         }
+
+        private void TxtName_TextChanged(object sender, EventArgs e)
+        {
+            string search = TxtName.Text;
+            var values = from item in db.Student
+                         where item.Name.Contains(search)
+                         select item;
+            dataGridView1.DataSource = values.ToList();
+        }
     }
 }
