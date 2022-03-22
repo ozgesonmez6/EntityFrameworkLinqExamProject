@@ -91,11 +91,21 @@ namespace WindowsFormsAppEntityFrameworkLinq
             db.SaveChanges();
             MessageBox.Show("Öğrenci listeye eklendi!");
 
-            Lesson l = new Lesson();
-            l.LessonName = TxtLessonName.Text;
-            db.Lesson.Add(l);
+            //Lesson l = new Lesson();
+            //l.LessonName = TxtLessonName.Text;
+            //db.Lesson.Add(l);
+            //db.SaveChanges();
+            //MessageBox.Show("Ders listeye eklendi!"); 
+
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(TxtStudentID.Text);
+            var x = db.Student.Find(id);
+            db.Student.Remove(x);
             db.SaveChanges();
-            MessageBox.Show("Ders listeye eklendi!");
+            MessageBox.Show("Öğrenci silindi!");
 
         }
     }

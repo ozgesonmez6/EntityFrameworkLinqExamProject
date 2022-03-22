@@ -109,6 +109,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnDelete.TabIndex = 3;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnUpdate
             // 
