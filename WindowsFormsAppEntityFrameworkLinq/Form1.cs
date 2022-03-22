@@ -124,5 +124,10 @@ namespace WindowsFormsAppEntityFrameworkLinq
         {
             dataGridView1.DataSource = db.NoteList();
         }
+
+        private void BtnFind_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.Student.Where(x => x.Name == TxtName.Text | x.Lastname==TxtLastname.Text).ToList();
+        }
     }
 }

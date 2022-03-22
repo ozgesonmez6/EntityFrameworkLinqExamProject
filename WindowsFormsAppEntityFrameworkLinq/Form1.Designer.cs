@@ -130,6 +130,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnFind.TabIndex = 5;
             this.BtnFind.Text = "Find";
             this.BtnFind.UseVisualStyleBackColor = true;
+            this.BtnFind.Click += new System.EventHandler(this.BtnFind_Click);
             // 
             // Student
             // 
