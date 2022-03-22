@@ -390,6 +390,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.BtnNoteList.TabIndex = 10;
             this.BtnNoteList.Text = "Note List";
             this.BtnNoteList.UseVisualStyleBackColor = true;
+            this.BtnNoteList.Click += new System.EventHandler(this.BtnNoteList_Click);
             // 
             // Form1
             // 

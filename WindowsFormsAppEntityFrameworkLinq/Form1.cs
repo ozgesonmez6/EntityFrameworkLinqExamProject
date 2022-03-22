@@ -18,11 +18,14 @@ namespace WindowsFormsAppEntityFrameworkLinq
             InitializeComponent();
         }
 
+        DbExamEntities db = new DbExamEntities();
         private void button1_Click(object sender, EventArgs e)
         {
             //Student List with Entity Framework
-            DbExamEntities db = new DbExamEntities();
+            
             dataGridView1.DataSource = db.Student.ToList();
+            dataGridView1.Columns[3].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
 
         }
 
@@ -59,6 +62,24 @@ namespace WindowsFormsAppEntityFrameworkLinq
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void BtnNoteList_Click(object sender, EventArgs e)
+        {
+            var query = from item in db.Note
+                        select new
+                        {
+                            item.NoteId,
+                            item.Student,
+                            item.Lesson,
+                            item.Exam1,
+                            item.Exam2,
+                            item.Exam3,
+                            item.Average,
+                            item.Status,
+                        };
+
+            dataGridView1.DataSource = query.ToList();
         }
     }
 }
