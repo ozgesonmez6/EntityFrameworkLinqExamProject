@@ -50,7 +50,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.TxtLessonID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Note = new System.Windows.Forms.GroupBox();
-            this.BtnExamUpdate = new System.Windows.Forms.Button();
+            this.BtnJoin = new System.Windows.Forms.Button();
             this.BtnCalculate = new System.Windows.Forms.Button();
             this.TxtStatus = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -274,7 +274,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             // 
             // Note
             // 
-            this.Note.Controls.Add(this.BtnExamUpdate);
+            this.Note.Controls.Add(this.BtnJoin);
             this.Note.Controls.Add(this.BtnCalculate);
             this.Note.Controls.Add(this.TxtStatus);
             this.Note.Controls.Add(this.label11);
@@ -293,14 +293,15 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.Note.TabStop = false;
             this.Note.Text = "Note";
             // 
-            // BtnExamUpdate
+            // BtnJoin
             // 
-            this.BtnExamUpdate.Location = new System.Drawing.Point(107, 267);
-            this.BtnExamUpdate.Name = "BtnExamUpdate";
-            this.BtnExamUpdate.Size = new System.Drawing.Size(130, 37);
-            this.BtnExamUpdate.TabIndex = 25;
-            this.BtnExamUpdate.Text = "Exam Update";
-            this.BtnExamUpdate.UseVisualStyleBackColor = true;
+            this.BtnJoin.Location = new System.Drawing.Point(107, 267);
+            this.BtnJoin.Name = "BtnJoin";
+            this.BtnJoin.Size = new System.Drawing.Size(130, 37);
+            this.BtnJoin.TabIndex = 25;
+            this.BtnJoin.Text = "Get with Join";
+            this.BtnJoin.UseVisualStyleBackColor = true;
+            this.BtnJoin.Click += new System.EventHandler(this.BtnJoin_Click);
             // 
             // BtnCalculate
             // 
@@ -643,7 +644,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnLessonList;
         private System.Windows.Forms.Button BtnNoteList;
-        private System.Windows.Forms.Button BtnExamUpdate;
+        private System.Windows.Forms.Button BtnJoin;
         private System.Windows.Forms.Button BtnCalculate;
         private System.Windows.Forms.Button BtnProcedur;
         private System.Windows.Forms.RadioButton radioButton1;

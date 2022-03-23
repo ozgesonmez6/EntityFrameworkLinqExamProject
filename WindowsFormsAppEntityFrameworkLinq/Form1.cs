@@ -70,8 +70,9 @@ namespace WindowsFormsAppEntityFrameworkLinq
                         select new
                         {
                             item.NoteId,
-                            item.Student,
-                            item.Lesson,
+                            item.Student1.Name,
+                            item.Student1.Lastname,
+                            item.Lesson1.LessonName,
                             item.Exam1,
                             item.Exam2,
                             item.Exam3,
@@ -208,6 +209,28 @@ namespace WindowsFormsAppEntityFrameworkLinq
                 var min = db.Note.Min(p => p.Exam1);
                 MessageBox.Show(min.ToString());
             }
+        }
+
+        private void BtnJoin_Click(object sender, EventArgs e)
+        {
+            var query = from n in db.Note
+                        join s in db.Student
+                        on n.Student equals s.Id
+                        join l in db.Lesson
+                        on n.Lesson equals l.LessonId
+
+                        select new
+                        {
+                            Student = s.Name,
+                            Lastname = s.Lastname,
+                            Lesson = l.LessonName,
+                            Exam1 = n.Exam1,
+                            Exam2 = n.Exam2,
+                            Exam3 = n.Exam3,
+                            Average=n.Average,
+                        };
+
+            dataGridView1.DataSource = query.ToList();
         }
     }
 }
