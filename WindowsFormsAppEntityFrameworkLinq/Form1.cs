@@ -138,5 +138,76 @@ namespace WindowsFormsAppEntityFrameworkLinq
                          select item;
             dataGridView1.DataSource = values.ToList();
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnLinqEntity_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                //Asc - Ascending
+                List<Student> list = db.Student.OrderBy(p => p.Name).ToList();
+                dataGridView1.DataSource = list;
+            }
+            if (radioButton2.Checked == true)
+            {
+                //Desc - Descending
+                List<Student> list = db.Student.OrderByDescending(p => p.Name).ToList();
+                dataGridView1.DataSource = list;
+            }
+            if (radioButton3.Checked == true)
+            {
+                List<Student> list = db.Student.OrderBy(p => p.Name).Take(3).ToList();
+                dataGridView1.DataSource = list;
+            }
+            if (radioButton4.Checked == true)
+            {
+                List<Student> list = db.Student.Where(p => p.Id == 5).ToList();
+                dataGridView1.DataSource = list;
+            }
+            if (radioButton5.Checked == true)
+            {
+                List<Student> list = db.Student.Where(p => p.Name.StartsWith("a")).ToList();
+                dataGridView1.DataSource = list;
+            }
+            if (radioButton6.Checked == true)
+            {
+                List<Student> list = db.Student.Where(p => p.Name.EndsWith("l")).ToList();
+                dataGridView1.DataSource = list;
+            }
+            if (radioButton7.Checked == true)
+            {
+                bool value = db.Student.Any();
+                MessageBox.Show(value.ToString());
+            }
+            if (radioButton8.Checked == true)
+            {
+                int total = db.Student.Count();
+                MessageBox.Show(total.ToString());
+            }
+            if (radioButton9.Checked == true)
+            {
+                var total = db.Note.Sum(p => p.Exam1);
+                MessageBox.Show(total.ToString());
+            }
+            if (radioButton10.Checked == true)
+            {
+                var average = db.Note.Average(p => p.Exam1);
+                MessageBox.Show(average.ToString());
+            }
+            if (radioButton11.Checked == true)
+            {
+                var max = db.Note.Max(p => p.Exam1);
+                MessageBox.Show(max.ToString());
+            }
+            if (radioButton12.Checked == true)
+            {
+                var min = db.Note.Min(p => p.Exam1);
+                MessageBox.Show(min.ToString());
+            }
+        }
     }
 }
