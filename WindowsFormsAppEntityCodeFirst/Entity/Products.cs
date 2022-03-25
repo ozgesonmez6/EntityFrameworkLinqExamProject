@@ -15,5 +15,6 @@ namespace WindowsFormsAppEntityCodeFirst.Entity
         public string ProductMarka { get; set; }
         public string ProductCategory { get; set; }
         public int ProductStok { get; set; }
+        public Categories categories { get; set; }
     }
 }
