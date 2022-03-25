@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Entity\Categories.cs" />
     <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\Customers.cs" />
     <Compile Include="Entity\Products.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -68,6 +69,10 @@
     <Compile Include="Migrations\202203241938155_InitialCreate.Designer.cs">
       <DependentUpon>202203241938155_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203250905152_CreateCustomersTable.cs" />
+    <Compile Include="Migrations\202203250905152_CreateCustomersTable.Designer.cs">
+      <DependentUpon>202203250905152_CreateCustomersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203241938155_InitialCreate.resx">
       <DependentUpon>202203241938155_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203250905152_CreateCustomersTable.resx">
+      <DependentUpon>202203250905152_CreateCustomersTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
