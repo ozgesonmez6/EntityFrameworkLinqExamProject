@@ -12,7 +12,7 @@ namespace WindowsFormsAppEntityCodeFirst.Entity
         [Key]
         public int CustomerID { get; set; }
         public string CustomerName { get; set; }
-        public string CustomerLastname { get; set; }
+        public string CustomerTitle { get; set; }
         public string CustomerCity { get; set; }
     }
 }
