@@ -89,6 +89,10 @@
     <Compile Include="Migrations\202203251008080_CategoryNameeToCategoryNameInCategoriesTable.Designer.cs">
       <DependentUpon>202203251008080_CategoryNameeToCategoryNameInCategoriesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203251025075_DeleteCategoryDetailColumnInCategoriesTable.cs" />
+    <Compile Include="Migrations\202203251025075_DeleteCategoryDetailColumnInCategoriesTable.Designer.cs">
+      <DependentUpon>202203251025075_DeleteCategoryDetailColumnInCategoriesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203251008080_CategoryNameeToCategoryNameInCategoriesTable.resx">
       <DependentUpon>202203251008080_CategoryNameeToCategoryNameInCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203251025075_DeleteCategoryDetailColumnInCategoriesTable.resx">
+      <DependentUpon>202203251025075_DeleteCategoryDetailColumnInCategoriesTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
