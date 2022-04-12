@@ -11,3 +11,4 @@ C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\De
 C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.csproj.CoreCompileInputs.cache
 C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.exe
 C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.pdb
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.csproj.AssemblyReference.cache

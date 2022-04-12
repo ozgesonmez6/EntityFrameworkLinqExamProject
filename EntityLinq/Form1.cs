@@ -24,5 +24,11 @@ namespace EntityLinq
             var values = db.Student.OrderBy(x => x.City).GroupBy(y => y.City).Select(z=>new { city=z.Key, total=z.Count()});
             dataGridView1.DataSource = values.ToList();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Text = db.Note.Max(x => x.Average).ToString();
+            label2.Text = db.Note.Min(x => x.Exam1).ToString();
+        }
     }
 }
