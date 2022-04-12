@@ -64,6 +64,26 @@ namespace WindowsFormsAppEntityFrameworkLinq
                 });
                 dataGridView1.DataSource = values.ToList();
             }
+            if (radioButton9.Checked == true)
+            {
+                var values = db.Student.OrderBy(x => x.Id).Take(3);
+                dataGridView1.DataSource = values.ToList();
+            }
+            if (radioButton10.Checked == true)
+            {
+                var values = db.Student.OrderByDescending(x => x.Id).Take(3);
+                dataGridView1.DataSource = values.ToList();
+            }
+            if (radioButton11.Checked == true)
+            {
+                var values = db.Student.OrderBy(x => x.Name);
+                dataGridView1.DataSource = values.ToList();
+            }
+            if (radioButton12.Checked == true)
+            {
+                var values = db.Student.OrderBy(x => x.Id).Skip(5);
+                dataGridView1.DataSource = values.ToList();
+            }
         }
     }
 }
