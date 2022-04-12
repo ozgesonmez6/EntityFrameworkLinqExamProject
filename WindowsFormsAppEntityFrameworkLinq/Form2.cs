@@ -35,6 +35,21 @@ namespace WindowsFormsAppEntityFrameworkLinq
                 var values = db.Student.Where(x => x.Name == textBox1.Text || x.Lastname == textBox1.Text);
                 dataGridView1.DataSource = values.ToList();
             }
+            if (radioButton4.Checked == true)
+            {
+                var values = db.Student.Select(x => new { lastname = x.Lastname});
+                dataGridView1.DataSource = values.ToList();
+            }
+            if (radioButton5.Checked == true)
+            {
+                var values = db.Student.Select(x => new { name=x.Name.ToUpper(), lastname=x.Lastname.ToLower() }).Where(x=>x.name != "ali");
+                dataGridView1.DataSource = values.ToList();
+            }
+            if (radioButton6.Checked == true)
+            {
+                var values = db.Student.Select(x => new { name = x.Name.ToUpper(), lastname = x.Lastname.ToLower() });
+                dataGridView1.DataSource = values.ToList();
+            }
         }
     }
 }
