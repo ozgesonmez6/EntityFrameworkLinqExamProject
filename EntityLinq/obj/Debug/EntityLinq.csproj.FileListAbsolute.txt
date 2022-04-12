@@ -1,0 +1,13 @@
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityLinq.exe.config
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityLinq.exe
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityLinq.pdb
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityFramework.dll
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityFramework.xml
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.Form1.resources
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.Properties.Resources.resources
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.csproj.GenerateResource.cache
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.csproj.CoreCompileInputs.cache
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.exe
+C:\Users\ozges\source\repos\WindowsFormsAppEntityFrameworkLinq\EntityLinq\obj\Debug\EntityLinq.pdb

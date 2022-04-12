@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntityFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntityCodeFirst", "WindowsFormsAppEntityCodeFirst\WindowsFormsAppEntityCodeFirst.csproj", "{3BC50343-B20E-43C5-A867-2C413239F324}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLinq", "EntityLinq\EntityLinq.csproj", "{C3E6DFC8-5671-4FC5-B231-A3DABFCDC2FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3BC50343-B20E-43C5-A867-2C413239F324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC50343-B20E-43C5-A867-2C413239F324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC50343-B20E-43C5-A867-2C413239F324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E6DFC8-5671-4FC5-B231-A3DABFCDC2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E6DFC8-5671-4FC5-B231-A3DABFCDC2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E6DFC8-5671-4FC5-B231-A3DABFCDC2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E6DFC8-5671-4FC5-B231-A3DABFCDC2FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
