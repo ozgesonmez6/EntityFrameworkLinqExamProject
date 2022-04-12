@@ -50,6 +50,11 @@ namespace WindowsFormsAppEntityFrameworkLinq
                 var values = db.Student.Select(x => new { name = x.Name.ToUpper(), lastname = x.Lastname.ToLower() });
                 dataGridView1.DataSource = values.ToList();
             }
+            if (radioButton7.Checked == true)
+            {
+                var values = db.Note.Select(x =>new {name= x.Student, average=x.Average, status=x.Status==true ? "Geçti" : "Kaldı"});
+                dataGridView1.DataSource = values.ToList();
+            }
         }
     }
 }

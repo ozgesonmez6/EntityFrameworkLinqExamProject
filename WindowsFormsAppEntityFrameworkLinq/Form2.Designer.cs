@@ -39,6 +39,7 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,11 +145,23 @@ namespace WindowsFormsAppEntityFrameworkLinq
             this.radioButton6.Text = "Şartlı Seçim";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(13, 410);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(133, 21);
+            this.radioButton7.TabIndex = 11;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Geçti Mi Kaldı Mı";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 580);
+            this.Controls.Add(this.radioButton7);
             this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
@@ -179,5 +192,6 @@ namespace WindowsFormsAppEntityFrameworkLinq
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
     }
 }
