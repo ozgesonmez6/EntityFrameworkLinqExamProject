@@ -30,5 +30,12 @@ namespace EntityLinq
             label1.Text = db.Note.Max(x => x.Average).ToString();
             label2.Text = db.Note.Min(x => x.Exam1).ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //label1.Text = db.Student.Count().ToString();
+            //label1.Text = db.Student.Sum(x => x.Id).ToString();
+            label1.Text = db.Student.Average(x => x.Id).ToString();
+        }
     }
 }
