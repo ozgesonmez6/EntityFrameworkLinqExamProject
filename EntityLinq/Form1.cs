@@ -34,8 +34,11 @@ namespace EntityLinq
         private void button3_Click(object sender, EventArgs e)
         {
             //label1.Text = db.Student.Count().ToString();
-            //label1.Text = db.Student.Sum(x => x.Id).ToString();
-            label1.Text = db.Student.Average(x => x.Id).ToString();
+            //label1.Text = db.Note.Sum(x => x.Exam1).ToString();
+            //label1.Text = db.Note.Average(x => x.Exam1).ToString();
+            label1.Text = (from x in db.Student
+                           orderby x.Id descending
+                           select x.Name).FirstOrDefault();
         }
     }
 }
